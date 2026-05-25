@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ravi Chandra - Computer Science Undergraduate at IIIT Sri City, Full Stack Developer, and Competitive Programmer.">
+    <meta name="keywords" content="Ravi Chandra, IIIT Sri City, Portfolio, Full Stack Developer, Software Engineer, Competitive Programmer, React, NestJS, Node.js, Python, Machine Learning">
+    <meta name="author" content="Ravi Chandra">
+    <title>Ravi Chandra | Full Stack Developer & Competitive Programmer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glows">
+        <div class="glow-circle glow-1"></div>
+        <div class="glow-circle glow-2"></div>
+        <div class="glow-circle glow-3"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="main-header">
+        <div class="container navbar-container">
+            <a href="#hero" class="logo">
+                <span class="logo-bracket">&lt;</span>Ravi<span class="logo-dot">.</span>Chandra<span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link active">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle between dark and light theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                
+                <!-- Mobile Navigation Toggle -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Open mobile menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section section-padding">
+            <div class="container hero-container">
+                <div class="hero-content scroll-reveal fade-left">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span> Available for Internships
+                    </div>
+                    <h1 class="hero-greeting">Hi, I'm <span class="text-gradient">Ravi Chandra</span></h1>
+                    <h2 class="hero-title">I am a <span id="typewriter" class="typewriter-text"></span><span class="cursor">|</span></h2>
+                    <p class="hero-description">
+                        Computer Science undergraduate at <strong>IIIT Sri City</strong> passionate about backend engineering, full stack development, competitive programming, and data analytics. Building highly structured, scalable web solutions.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-down"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch <i class="fa-solid fa-paper-plane"></i></a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/ravichandra14" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ravi-chandra-8a6708328" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:ravichandra.b@iiits.in" aria-label="Email Ravi" class="social-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual scroll-reveal fade-right">
+                    <div class="glass-terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot close"></span>
+                            <span class="terminal-dot minimize"></span>
+                            <span class="terminal-dot expand"></span>
+                            <span class="terminal-title">developer.js</span>
+                        </div>
+                        <div class="terminal-body font-code">
+                            <p class="line"><span class="keyword">const</span> developer = {</p>
+                            <p class="line indent"><span class="property">name</span>: <span class="string">"Ravi Chandra"</span>,</p>
+                            <p class="line indent"><span class="property">role</span>: <span class="string">"Full Stack & CP"</span>,</p>
+                            <p class="line indent"><span class="property">education</span>: <span class="string">"B.Tech CSE @ IIIT Sri City"</span>,</p>
+                            <p class="line indent"><span class="property">cgpa</span>: <span class="number">8.5</span>,</p>
+                            <p class="line indent"><span class="property">skills</span>: [</p>
+                            <p class="line double-indent"><span class="string">"C++"</span>, <span class="string">"React"</span>, <span class="string">"Node.js"</span>,</p>
+                            <p class="line double-indent"><span class="string">"NestJS"</span>, <span class="string">"PostgreSQL"</span>, <span class="string">"Python"</span></p>
+                            <p class="line indent">],</p>
+                            <p class="line indent"><span class="property">codeforcesRating</span>: <span class="number">1000</span>,</p>
+                            <p class="line indent"><span class="property">leetCodeSolved</span>: <span class="number">100</span>,</p>
+                            <p class="line indent"><span class="property">isPassionate</span>: <span class="boolean">true</span></p>
+                            <p class="line">};</p>
+                            <p class="line"><span class="keyword">console</span>.<span class="method">log</span>(developer.name + <span class="string">" is ready!"</span>);</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Introduction</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-bio scroll-reveal fade-left">
+                        <h3 class="bio-title">Solving Complex Algorithmic Problems & Building Scalable Applications</h3>
+                        <p class="bio-text">
+                            Motivated and detail-oriented Computer Science undergraduate at IIIT Sri City. I have established strong foundations in Data Structures & Algorithms, Full Stack Development, Backend Engineering, and Data Analytics. I love engineering applications that combine powerful logic with intuitive UI/UX.
+                        </p>
+                        <p class="bio-text">
+                            With hands-on experience in React.js, Node.js, NestJS, and Django, I enjoy bridging the gap between structured database models and clean, modern user interfaces.
+                        </p>
+                        
+                        <div class="strengths-container">
+                            <h4 class="sub-title">Core Strengths</h4>
+                            <div class="strengths-grid">
+                                <div class="strength-card">
+                                    <div class="strength-icon"><i class="fa-solid fa-brain"></i></div>
+                                    <div class="strength-name">Problem Solving</div>
+                                </div>
+                                <div class="strength-card">
+                                    <div class="strength-icon"><i class="fa-solid fa-bolt"></i></div>
+                                    <div class="strength-name">Quick Learner</div>
+                                </div>
+                                <div class="strength-card">
+                                    <div class="strength-icon"><i class="fa-solid fa-users"></i></div>
+                                    <div class="strength-name">Team Collaboration</div>
+                                </div>
+                                <div class="strength-card">
+                                    <div class="strength-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                    <div class="strength-name">Adaptable & Consistent</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cards scroll-reveal fade-right">
+                        <!-- Education Card -->
+                        <div class="about-card glass-panel">
+                            <div class="card-icon-wrapper purple-glow">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="card-heading">Education</h3>
+                            <h4 class="card-subheading">Indian Institute of Information Technology (IIIT), Sri City</h4>
+                            <p class="card-desc">B.Tech – Computer Science & Engineering (2024 - Present)</p>
+                            <div class="card-stat">
+                                <span class="stat-number">8.5</span>
+                                <span class="stat-label">CGPA / 10</span>
+                            </div>
+                        </div>
+
+                        <!-- Coding Stats Card -->
+                        <div class="about-card glass-panel">
+                            <div class="card-icon-wrapper cyan-glow">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h3 class="card-heading">Competitive Programming</h3>
+                            <p class="card-desc">Active contest competitor focused on analytical thinking and algorithmic efficiency.</p>
+                            <div class="stats-row">
+                                <div class="mini-stat">
+                                    <span class="mini-stat-num">1000+</span>
+                                    <span class="mini-stat-label">Codeforces Rating</span>
+                                </div>
+                                <div class="mini-stat">
+                                    <span class="mini-stat-num">100+</span>
+                                    <span class="mini-stat-label">LeetCode Solved</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Proficiencies</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-category-card glass-panel scroll-reveal">
+                        <h3 class="category-title"><i class="fa-solid fa-terminal text-gradient"></i> Programming Languages</h3>
+                        <div class="skills-list">
+                            <div class="skill-tag">C++</div>
+                            <div class="skill-tag">C</div>
+                            <div class="skill-tag">Java</div>
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">JavaScript</div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skills-category-card glass-panel scroll-reveal">
+                        <h3 class="category-title"><i class="fa-solid fa-code text-gradient"></i> Frontend Tech</h3>
+                        <div class="skills-list">
+                            <div class="skill-tag">React.js</div>
+                            <div class="skill-tag">HTML5</div>
+                            <div class="skill-tag">CSS3</div>
+                            <div class="skill-tag">Responsive Design</div>
+                            <div class="skill-tag">DOM Manipulation</div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skills-category-card glass-panel scroll-reveal">
+                        <h3 class="category-title"><i class="fa-solid fa-gears text-gradient"></i> Backend Tech</h3>
+                        <div class="skills-list">
+                            <div class="skill-tag">Node.js</div>
+                            <div class="skill-tag">NestJS</div>
+                            <div class="skill-tag">Django</div>
+                            <div class="skill-tag">REST APIs</div>
+                            <div class="skill-tag">API Design</div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skills-category-card glass-panel scroll-reveal">
+                        <h3 class="category-title"><i class="fa-solid fa-database text-gradient"></i> Databases</h3>
+                        <div class="skills-list">
+                            <div class="skill-tag">PostgreSQL</div>
+                            <div class="skill-tag">MySQL</div>
+                            <div class="skill-tag">DBMS</div>
+                            <div class="skill-tag">SQL Querying</div>
+                        </div>
+                    </div>
+
+                    <!-- Data Analytics & ML -->
+                    <div class="skills-category-card glass-panel scroll-reveal">
+                        <h3 class="category-title"><i class="fa-solid fa-chart-line text-gradient"></i> Data Analytics & ML</h3>
+                        <div class="skills-list">
+                            <div class="skill-tag">Pandas</div>
+                            <div class="skill-tag">NumPy</div>
+                            <div class="skill-tag">Matplotlib</div>
+                            <div class="skill-tag">Scikit-learn</div>
+                            <div class="skill-tag">Jupyter Notebook</div>
+                            <div class="skill-tag">Machine Learning</div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Core CS -->
+                    <div class="skills-category-card glass-panel scroll-reveal">
+                        <h3 class="category-title"><i class="fa-solid fa-screwdriver-wrench text-gradient"></i> Tools & Core CS</h3>
+                        <div class="skills-list">
+                            <div class="skill-tag">Git & GitHub</div>
+                            <div class="skill-tag">Linux / Shell</div>
+                            <div class="skill-tag">VS Code</div>
+                            <div class="skill-tag">DSA</div>
+                            <div class="skill-tag">OOPs</div>
+                            <div class="skill-tag">Operating Systems</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Portfolio</span>
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <!-- Projects Filter Controls -->
+                <div class="filter-controls scroll-reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="data">Data Science & ML</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: E-Commerce -->
+                    <div class="project-card glass-panel scroll-reveal" data-category="web">
+                        <div class="project-header">
+                            <div class="project-folder"><i class="fa-regular fa-folder-open"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/ravichandra14/projects" target="_blank" rel="noopener noreferrer" aria-label="E-Commerce Code Repository" title="View Source Code"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://e-commerce-omega-dun.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="E-Commerce Live Site" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Full Stack E-Commerce Website</h3>
+                        <p class="project-desc">
+                            A highly-scalable, responsive e-commerce platform built to manage modern transaction and catalog requirements. Designed structured schemas and optimized APIs for flawless data flow.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fa-solid fa-caret-right"></i> User authentication and role-based authorization</li>
+                            <li><i class="fa-solid fa-caret-right"></i> Flexible product catalog & shopping cart state engine</li>
+                            <li><i class="fa-solid fa-caret-right"></i> Robust order workflows & relational database integration</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>NestJS</span>
+                            <span>PostgreSQL</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Portfolio -->
+                    <div class="project-card glass-panel scroll-reveal" data-category="web">
+                        <div class="project-header">
+                            <div class="project-folder"><i class="fa-regular fa-folder-open"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/ravichandra14/profillo" target="_blank" rel="noopener noreferrer" aria-label="Portfolio Code Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p class="project-desc">
+                            A high-end, responsive developer portfolio showing clear typography, custom layout elements, and clean coding paradigms. Handcrafted to offer stellar load speeds and elegant visual feedback.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fa-solid fa-caret-right"></i> Dynamic theme controller with layout updates</li>
+                            <li><i class="fa-solid fa-caret-right"></i> Scroll-triggered animations via Intersection Observer</li>
+                            <li><i class="fa-solid fa-caret-right"></i> Dynamic typing animations and floating elements</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Data Analytics & ML -->
+                    <div class="project-card glass-panel scroll-reveal" data-category="data">
+                        <div class="project-header">
+                            <div class="project-folder"><i class="fa-regular fa-folder-open"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/ravichandra14/projects" target="_blank" rel="noopener noreferrer" aria-label="Data Science Code Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Data Analytics & Machine Learning</h3>
+                        <p class="project-desc">
+                            Algorithmic analysis and machine learning workflows executed on diverse structured datasets. Focuses on rigorous preprocessing, features engineering, and model validation.
+                        </p>
+                        <ul class="project-features">
+                            <li><i class="fa-solid fa-caret-right"></i> Thorough Exploratory Data Analysis & visual graphing</li>
+                            <li><i class="fa-solid fa-caret-right"></i> Mathematical data cleaning and engineering pipelines</li>
+                            <li><i class="fa-solid fa-caret-right"></i> Implemented regression, classification models in Sklearn</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Matplotlib</span>
+                            <span>Scikit-learn</span>
+                            <span>Jupyter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Reach Out</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info Col -->
+                    <div class="contact-info scroll-reveal fade-left">
+                        <h3 class="info-title">Let's Discuss Opportunities</h3>
+                        <p class="info-text">
+                            I am currently seeking software engineering or full stack development internship opportunities. Whether you want to discuss a project, query my coding background, or discuss internships, feel free to contact me.
+                        </p>
+                        
+                        <div class="info-cards">
+                            <div class="info-item glass-panel">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="info-content">
+                                    <span class="info-label">Email Me</span>
+                                    <a href="mailto:ravichandra.b@iiits.in" class="info-value">ravichandra.b@iiits.in</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item glass-panel">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="info-content">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Sri City, Andhra Pradesh, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-box">
+                            <h4>Connect Online</h4>
+                            <div class="social-links">
+                                <a href="https://github.com/ravichandra14" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="https://www.linkedin.com/in/ravi-chandra-8a6708328" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Col -->
+                    <div class="contact-form-container glass-panel scroll-reveal fade-right">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required class="form-input" placeholder=" ">
+                                <label for="name" class="form-label">Name</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required class="form-input" placeholder=" ">
+                                <label for="email" class="form-label">Email</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required class="form-input" placeholder=" ">
+                                <label for="subject" class="form-label">Subject</label>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" name="message" required class="form-input form-textarea" placeholder=" "></textarea>
+                                <label for="message" class="form-label">Message</label>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                                Send Message <span id="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                            </button>
+                        </form>
+                        
+                        <div id="form-feedback" class="form-feedback hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 Ravi Chandra. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <p>Designed & Engineered with <span class="heart-icon"><i class="fa-solid fa-heart"></i></span></p>
+            </div>
+            <div class="footer-right">
+                <a href="#hero" class="back-to-top" aria-label="Scroll back to top">
+                    Back to Top <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
