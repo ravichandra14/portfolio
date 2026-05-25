@@ -890,11 +890,39 @@ body.light-theme .social-icon:hover {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--accent-cyan);
+    transition: var(--transition-quick);
 }
 
 .mini-stat-label {
     font-size: 0.85rem;
     color: var(--text-secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: var(--transition-quick);
+}
+
+.CP-stat-link {
+    cursor: pointer;
+}
+
+.CP-stat-link .mini-stat-label i {
+    font-size: 0.7rem;
+    opacity: 0.5;
+    transition: var(--transition-quick);
+}
+
+.CP-stat-link:hover .mini-stat-num {
+    color: var(--accent-primary);
+}
+
+.CP-stat-link:hover .mini-stat-label {
+    color: var(--text-primary);
+}
+
+.CP-stat-link:hover .mini-stat-label i {
+    opacity: 1;
+    transform: translate(2px, -2px);
 }
 
 /* 12. SKILLS SECTION
